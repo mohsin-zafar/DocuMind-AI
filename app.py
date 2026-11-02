@@ -1,9 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
-from pathlib import Path
-import os
 
-load_dotenv()
 from documind.config import settings
 from documind.ollama_client import OllamaService
 from documind.documents import extract_uploaded_files
