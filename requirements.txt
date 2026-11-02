@@ -1,7 +1,10 @@
 streamlit>=1.38
 ollama>=0.4
 requests>=2.31
-sentence-transformers>=3.0
+# Use the CPU wheel instead of downloading CUDA/NVIDIA packages.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+sentence-transformers>=3.0,<4.0
 faiss-cpu>=1.8
 numpy<2.3
 pypdf>=4.3
